@@ -1,1 +1,13 @@
 C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\bin\Debug\SFS.exe.config
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\MainWindow.g.cs
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\App.g.cs
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.cache
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS_MarkupCompile.lref
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\bin\Debug\SFS.exe
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\bin\Debug\SFS.pdb
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\MainWindow.baml
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.g.resources
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.Properties.Resources.resources
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.exe
+C:\Users\Omar Khaled\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
