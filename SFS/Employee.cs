@@ -69,9 +69,9 @@ namespace SFS
         public int Working_year_calc( int  working_year)
         {
             int current_year = 2018;
-            int s;
-            s = current_year - working_year;
-            return s;
+            int years;
+            years= current_year - working_year;
+            return years;
 
         }
   
