@@ -25,3 +25,6 @@ C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\MainWindo
 C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.g.resources
 C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.Properties.Resources.resources
 C:\Users\Owner\Documents\GitHub\Sports-Federation-System\SFS\obj\Debug\SFS.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\Sports-Federation-System\SFS\bin\Debug\SFS.exe.config
+C:\Users\DELL\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.exe
+C:\Users\DELL\Desktop\Sports-Federation-System\SFS\obj\Debug\SFS.pdb
