@@ -22,7 +22,7 @@ namespace SFS
             department = "";
             
         }
-        public Employee(int n,int x,bool y,string z)
+        public Employee(int n,int x,bool y,string z, string a, int d, string g, int i, bool m, float s, float b) :base(a,d,g,i,m,s,b)
         {
             working_year = n;
             Employment_date = x;
