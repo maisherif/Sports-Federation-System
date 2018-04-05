@@ -79,8 +79,17 @@
     <Compile Include="Edit_Delete.xaml.cs">
       <DependentUpon>Edit_Delete.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Edit_Mobile.xaml.cs">
-      <DependentUpon>Edit_Mobile.xaml</DependentUpon>
+    <Compile Include="Edit_Employee.xaml.cs">
+      <DependentUpon>Edit_Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Medicalform.xaml.cs">
+      <DependentUpon>Edit_Medicalform.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Medicalform_Employee.xaml.cs">
+      <DependentUpon>Edit_Medicalform_Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Mobile_Player.xaml.cs">
+      <DependentUpon>Edit_Mobile_Player.xaml</DependentUpon>
     </Compile>
     <Compile Include="Edit_Player.xaml.cs">
       <DependentUpon>Edit_Player.xaml</DependentUpon>
@@ -122,7 +131,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Edit_Mobile.xaml">
+    <Page Include="Edit_Employee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_Medicalform.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_Medicalform_Employee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_Mobile_Player.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -194,6 +215,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="deletee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="next1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

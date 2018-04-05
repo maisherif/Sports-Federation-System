@@ -23,5 +23,10 @@ namespace SFS
         {
             InitializeComponent();
         }
+
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

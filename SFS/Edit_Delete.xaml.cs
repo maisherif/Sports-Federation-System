@@ -23,5 +23,20 @@ namespace SFS
         {
             InitializeComponent();
         }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            if (choose.Text == "Player")
+            {
+                Enter_ID ei = new Enter_ID();
+                ei.Show();
+            }
+        }
     }
 }
