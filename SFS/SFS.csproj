@@ -55,12 +55,89 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Add_Championship.xaml.cs">
+      <DependentUpon>Add_Championship.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Club.xaml.cs">
+      <DependentUpon>Add_Club.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Employee.xaml.cs">
+      <DependentUpon>Add_Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Player.xaml.cs">
+      <DependentUpon>Add_Player.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Team.xaml.cs">
+      <DependentUpon>Add_Team.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Championships.cs" />
+    <Compile Include="Chooose.xaml.cs">
+      <DependentUpon>Chooose.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Club.cs" />
     <Compile Include="Coach.cs" />
+    <Compile Include="Edit_Delete.xaml.cs">
+      <DependentUpon>Edit_Delete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Mobile.xaml.cs">
+      <DependentUpon>Edit_Mobile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Player.xaml.cs">
+      <DependentUpon>Edit_Player.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enter_ID.xaml.cs">
+      <DependentUpon>Enter_ID.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enter_ID_Employee.xaml.cs">
+      <DependentUpon>Enter_ID_Employee.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Sponsers.cs" />
     <Compile Include="Team.cs" />
+    <Page Include="Add_Championship.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Add_Club.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Add_Employee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Add_Player.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Add_Team.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chooose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_Delete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_Mobile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_Player.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Enter_ID.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Enter_ID_Employee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -102,6 +179,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="deletee.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
