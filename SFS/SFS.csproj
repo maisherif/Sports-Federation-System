@@ -64,41 +64,60 @@
     <Compile Include="Add_Employee.xaml.cs">
       <DependentUpon>Add_Employee.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Add_Options.xaml.cs">
+      <DependentUpon>Add_Options.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Add_Player.xaml.cs">
       <DependentUpon>Add_Player.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Add_Team.xaml.cs">
-      <DependentUpon>Add_Team.xaml</DependentUpon>
+    <Compile Include="Add__Team.xaml.cs">
+      <DependentUpon>Add__Team.xaml</DependentUpon>
     </Compile>
     <Compile Include="Championships.cs" />
-    <Compile Include="Chooose.xaml.cs">
-      <DependentUpon>Chooose.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Club.cs" />
     <Compile Include="Coach.cs" />
+    <Compile Include="Containers.cs" />
+    <Compile Include="Edit_Avaliable.xaml.cs">
+      <DependentUpon>Edit_Avaliable.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Edit_Delete.xaml.cs">
       <DependentUpon>Edit_Delete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_DepartmentSalaryBonus.xaml.cs">
+      <DependentUpon>Edit_DepartmentSalaryBonus.xaml</DependentUpon>
     </Compile>
     <Compile Include="Edit_Employee.xaml.cs">
       <DependentUpon>Edit_Employee.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Edit_Medicalform.xaml.cs">
-      <DependentUpon>Edit_Medicalform.xaml</DependentUpon>
+    <Compile Include="Edit_EmployeeMedicalForm.xaml.cs">
+      <DependentUpon>Edit_EmployeeMedicalForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Edit_Medicalform_Employee.xaml.cs">
-      <DependentUpon>Edit_Medicalform_Employee.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Edit_Mobile_Player.xaml.cs">
-      <DependentUpon>Edit_Mobile_Player.xaml</DependentUpon>
+    <Compile Include="Edit_MobileNumberEmployee.xaml.cs">
+      <DependentUpon>Edit_MobileNumberEmployee.xaml</DependentUpon>
     </Compile>
     <Compile Include="Edit_Player.xaml.cs">
       <DependentUpon>Edit_Player.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_PlayerMediacalForm.xaml.cs">
+      <DependentUpon>Edit_PlayerMediacalForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_PlayerMobileNumber.xaml.cs">
+      <DependentUpon>Edit_PlayerMobileNumber.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_SalaryBonus.xaml.cs">
+      <DependentUpon>Edit_SalaryBonus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_TeamName.xaml.cs">
+      <DependentUpon>Edit_TeamName.xaml</DependentUpon>
     </Compile>
     <Compile Include="Enter_ID.xaml.cs">
       <DependentUpon>Enter_ID.xaml</DependentUpon>
     </Compile>
     <Compile Include="Enter_ID_Employee.xaml.cs">
       <DependentUpon>Enter_ID_Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Options.xaml.cs">
+      <DependentUpon>Options.xaml</DependentUpon>
     </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Sponsers.cs" />
@@ -115,15 +134,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Add_Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Add_Player.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Add_Team.xaml">
+    <Page Include="Add__Team.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Chooose.xaml">
+    <Page Include="Edit_Avaliable.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -131,23 +154,39 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Edit_DepartmentSalaryBonus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Edit_Employee.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Edit_Medicalform.xaml">
+    <Page Include="Edit_EmployeeMedicalForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Edit_Medicalform_Employee.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Edit_Mobile_Player.xaml">
+    <Page Include="Edit_MobileNumberEmployee.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Edit_Player.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_PlayerMediacalForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_PlayerMobileNumber.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_SalaryBonus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit_TeamName.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -172,6 +211,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Person.cs" />
@@ -218,6 +261,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="next1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="backgrd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Edit2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

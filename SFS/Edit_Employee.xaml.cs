@@ -26,12 +26,43 @@ namespace SFS
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            if (choose.Text == "Mobile_Number")
+            {
+                Edit_MobileNumberEmployee ee = new Edit_MobileNumberEmployee();
+                ee.Show();
+            }
+          
+            else if (choose.Text == "Salary")
+            {
+                Edit_DepartmentSalaryBonus z = new Edit_DepartmentSalaryBonus();
+                z.Show();
+            }
+            else if (choose.Text == "Bonus")
+            {
+                Edit_DepartmentSalaryBonus z = new Edit_DepartmentSalaryBonus();
+                z.Show();
+            }
+            else if (choose.Text == "Department")
+            {
+                Edit_DepartmentSalaryBonus z = new Edit_DepartmentSalaryBonus();
+                z.Show();
+            }
+            else if (choose.Text == "Avaliable")
+            {
+                Edit_Avaliable g = new Edit_Avaliable();
+                g.Show();
+            }
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Enter_ID_Employee eie = new Enter_ID_Employee();
+            eie.Show();
         }
     }
 }

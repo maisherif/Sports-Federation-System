@@ -36,7 +36,11 @@ namespace SFS
                 sen = "Yes";
             else sen = "No";
 
-            if (!File.Exists("Championships.xml"))
+            if (type.Text == "" || (Senior.IsChecked == false && junior.IsChecked == false) || result.Text == ""||place.Text=="")
+            {
+                MessageBox.Show("Please fill the required information !");
+            }
+           else  if (!File.Exists("Championships.xml"))
             {
                 XmlTextWriter document = new XmlTextWriter("Championships.xml", Encoding.UTF8);
 
@@ -67,6 +71,7 @@ namespace SFS
 
                 document.Close();
 
+                MessageBox.Show("Championship Successfuly Added.");
             }
             else
 
@@ -94,12 +99,15 @@ namespace SFS
 
                 doc.DocumentElement.AppendChild(Championshipp);
                 doc.Save("Championships.xml");
+
+                MessageBox.Show("Championship Successfuly Added.");
             }
+           
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
-            Chooose cccc = new Chooose();
+            Add_Options cccc = new Add_Options();
             cccc.Show();
         }
     }

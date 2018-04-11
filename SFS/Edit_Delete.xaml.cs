@@ -37,6 +37,18 @@ namespace SFS
                 Enter_ID ei = new Enter_ID();
                 ei.Show();
             }
+           else if (choose.Text == "Employee")
+            {
+                Enter_ID_Employee ei = new Enter_ID_Employee();
+                ei.Show();
+            }
+
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Options o = new Options();
+            o.Show();
         }
     }
 }

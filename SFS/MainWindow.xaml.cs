@@ -22,7 +22,7 @@ namespace SFS
     {
         public MainWindow()
         {
-            Chooose c = new Chooose();
+            Options c = new Options();
                 c.Show();
         }
     }

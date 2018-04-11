@@ -5,37 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Edit_Employee" Height="300" Width="300">
+        Title="Edit_Employee" Height="350" Width="500">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/Edit_Employee.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <ComboBox x:Name="choose" Margin="86,90,50,158" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem Content="Mobile_Number"/>
-            <ComboBoxItem Content="Medical_Form"/>
-            <ComboBoxItem Content="Salary"/>
-            <ComboBoxItem Content="Bonus"/>
-            <ComboBoxItem Content="Avaliable"/>
-            <ComboBoxItem Content="Department"/>
+        <ComboBox x:Name="choose" Margin="104,90,112,208" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Mobile_Number</ComboBoxItem>
+            <ComboBoxItem>Salary</ComboBoxItem>
+            <ComboBoxItem>Avaliable</ComboBoxItem>
+            <ComboBoxItem>Department</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Margin="293,302,-92,-101" Click="button1_Click" Height="69" BorderThickness="0">
-            <Button.Background>
-                <ImageBrush ImageSource="next.png"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button1_Copy" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Margin="293,302,-92,-101" Click="button1_Click" Height="69" BorderThickness="0">
-            <Button.Background>
-                <ImageBrush ImageSource="next.png"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button1_Copy1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Margin="293,302,-92,-101" Click="button1_Click" Height="69" BorderThickness="0">
-            <Button.Background>
-                <ImageBrush ImageSource="next.png"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button1_Copy2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Margin="216,220,0,0" Click="button1_Click" Height="48" BorderThickness="0">
+        <Button x:Name="button1_Copy2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Margin="421,271,0,0" Click="button1_Click" Height="48" BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="next1.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label2_Copy11" Content="Change:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,80,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Foreground="#FF34A5B0">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="50" Margin="0,272,0,-2" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="back1.png"/>
             </Button.Background>
         </Button>
 

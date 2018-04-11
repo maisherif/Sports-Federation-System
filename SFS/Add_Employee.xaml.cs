@@ -33,23 +33,45 @@ namespace SFS
         {
             string gender;
             string med;
-            string bou;
             string avail;
+            int y = int.Parse(Emplyedate.Text.Substring(6));
+            int x = 18 - y;
+            int sal = int.Parse(Salary.Text);
+            int per = x / 5;
+            string working_years = x.ToString();
+            int bonu = 0;
+            if(x>5)
+            {
+                 bonu = (per * sal) / 100;
+            }
+            string bonus = bonu.ToString();
+            // string ID =  Name.Text.ElementAt(0)+ Name.Text.ElementAt(1) +Date.Text.ElementAt(6) + Date.Text.ElementAt(7);
+            string temp = Date.Text;
+            string temp2=Name.Text;
+            string id = temp2[0].ToString() + temp2[1].ToString() + temp[6].ToString() + temp[7].ToString();
+          //  MessageBox.Show(id);
             if (Male.IsChecked == true)
                 gender = "Male";
             else gender = "Female";
+
             if (Yes.IsChecked == true)
                 med = "Yes";
             else med = "No";
-            if (Yes2.IsChecked == true)
-                bou = "Yes";
-            else bou = "No";
-
+           
             if (Yes3.IsChecked == true)
                 avail = "Yes";
             else avail = "No";
 
-            if (!File.Exists("Employees.xml"))
+            if (Name.Text == "" || number.Text == "" || Salary.Text == "" || Emplyedate.Text == ""|| Date.Text==""|| Department.Text=="")
+            {
+                MessageBox.Show("Please fill the required information !");
+            }
+            else if((Male.IsChecked == true)&& (Female.IsChecked == true))
+                MessageBox.Show("Please fill the required information !");
+           else if ((Yes.IsChecked == true) && (No.IsChecked == true))
+                MessageBox.Show("Please fill the required information !");
+          
+           else  if (!File.Exists("Employees.xml"))
             {
                 XmlTextWriter document = new XmlTextWriter("Employees.xml", Encoding.UTF8);
 
@@ -61,10 +83,10 @@ namespace SFS
                 document.WriteString(Name.Text);
                 document.WriteEndElement();
 
-                document.WriteStartElement("Employee_ID");
-                document.WriteString(ID.Text);
+                document.WriteStartElement("Employment_ID");
+                document.WriteString(id);
                 document.WriteEndElement();
-
+             
                 document.WriteStartElement("Mobile_Number");
                 document.WriteString(number.Text);
                 document.WriteEndElement();
@@ -82,11 +104,15 @@ namespace SFS
                 document.WriteEndElement();
 
                 document.WriteStartElement("Bonus");
-                document.WriteString(bou);
+                document.WriteString(bonus);
                 document.WriteEndElement();
 
                 document.WriteStartElement("Employement_Date");
                 document.WriteString(Emplyedate.Text);
+                document.WriteEndElement();
+
+                document.WriteStartElement("Working_Years");
+                document.WriteString(working_years);
                 document.WriteEndElement();
 
                 document.WriteStartElement("Date_of_birth");
@@ -106,6 +132,8 @@ namespace SFS
                 document.WriteEndDocument();
 
                 document.Close();
+
+                MessageBox.Show("Employee Successfuly Added.");
             }
             else
 
@@ -119,9 +147,9 @@ namespace SFS
                 Employee_Name.InnerText = Name.Text;
                 employee.AppendChild(Employee_Name);
 
-                XmlNode employee_id = doc.CreateElement("Employee_ID");
-                employee_id.InnerText = ID.Text;
-                employee.AppendChild(employee_id);
+                XmlNode Employee_ID = doc.CreateElement("Employeement_ID");
+                Employee_ID.InnerText = id;
+                employee.AppendChild(Employee_ID);
 
                 XmlNode MobileNum = doc.CreateElement("Mobile_Number");
                 MobileNum.InnerText = number.Text;
@@ -139,13 +167,17 @@ namespace SFS
                 salary.InnerText = Salary.Text;
                 employee.AppendChild(salary);
 
-                XmlNode bonus = doc.CreateElement("Bonus");
-                bonus.InnerText = bou;
-                employee.AppendChild(bonus);
+                XmlNode b = doc.CreateElement("Bonus");
+                b.InnerText = bonus;
+                employee.AppendChild(b);
 
                 XmlNode Employementdate = doc.CreateElement("Employement_Date");
                 Employementdate.InnerText = Emplyedate.Text;
                 employee.AppendChild(Employementdate);
+
+                XmlNode workingyears = doc.CreateElement("Working_Years");
+                workingyears.InnerText = working_years;
+                employee.AppendChild(workingyears);
 
                 XmlNode dateofbirth = doc.CreateElement("Date_of_birth");
                 dateofbirth.InnerText = Date.Text;
@@ -155,15 +187,26 @@ namespace SFS
                 avaliable.InnerText = avail;
                 employee.AppendChild(avaliable);
 
+                XmlNode dep = doc.CreateElement("Department");
+                dep.InnerText = Department.Text;
+                employee.AppendChild(dep);
+
                 doc.DocumentElement.AppendChild(employee);
                 doc.Save("Employees.xml");
+
+                MessageBox.Show("Employee Successfuly Added.");
             }
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
-            Chooose cccc = new Chooose();
+            Add_Options cccc = new Add_Options();
             cccc.Show();
+        }
+
+        private void ID_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
     }

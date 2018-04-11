@@ -8,5 +8,6 @@ namespace SFS
 {
     class Team
     {
+
     }
 }

@@ -5,27 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SFS"
         mc:Ignorable="d"
-        Title="Edit_Player" Height="300" Width="300">
+        Title="Edit_Player" Height="350" Width="500">
     <Grid Margin="4,0,2,3">
         <Grid.Background>
-            <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/Edit_Employee.png"/>
+            <ImageBrush ImageSource="backgrd.png"/>
         </Grid.Background>
-        <Button x:Name="button4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="0,220,0,-1" Height="48">
+        <Button x:Name="back" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="-1,268,0,0" Height="48" Click="button4_Click">
             <Button.Background>
-                <ImageBrush ImageSource="\\vmware-host\Shared Folders\GitHub\Sports-Federation-System\images/back.png"/>
+                <ImageBrush ImageSource="back.png"/>
             </Button.Background>
         </Button>
-        <ComboBox x:Name="choose" Margin="86,90,72,155" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem Content="Mobile_Number"/>
-            <ComboBoxItem Content="Medical_Form"/>
-            <ComboBoxItem Content="Salary"/>
-            <ComboBoxItem Content="Bonus"/>
+        <ComboBox x:Name="choose" Margin="98,92,177,199" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Mobile_Number</ComboBoxItem>
+            <ComboBoxItem>Medical_Form</ComboBoxItem>
+            <ComboBoxItem>Salary</ComboBoxItem>
+            <ComboBoxItem>Team_Name</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Margin="216,220,0,-1" Click="button1_Click" Height="48" BorderThickness="0">
+        <Button x:Name="next" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Margin="415,268,0,0" Click="button1_Click" Height="48" BorderThickness="0">
             <Button.Background>
                 <ImageBrush ImageSource="next1.png"/>
             </Button.Background>
         </Button>
+        <Label x:Name="label2_Copy11" Content="Change:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,84,0,0" FontFamily="Traditional Arabic" FontSize="22" FontWeight="Bold" Foreground="#FF34A5B0"/>
 
     </Grid>
 </Window>

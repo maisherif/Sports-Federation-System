@@ -41,7 +41,7 @@ namespace SFS {
     public partial class Edit_Medicalform : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 13 "..\..\Edit_Medicalform.xaml"
+        #line 16 "..\..\Edit_Medicalform.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.RadioButton yes;
         
@@ -49,7 +49,7 @@ namespace SFS {
         #line hidden
         
         
-        #line 14 "..\..\Edit_Medicalform.xaml"
+        #line 17 "..\..\Edit_Medicalform.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.RadioButton no;
         
@@ -57,7 +57,7 @@ namespace SFS {
         #line hidden
         
         
-        #line 15 "..\..\Edit_Medicalform.xaml"
+        #line 18 "..\..\Edit_Medicalform.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button button;
         

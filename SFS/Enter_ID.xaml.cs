@@ -17,8 +17,10 @@ namespace SFS
     /// <summary>
     /// Interaction logic for Enter_ID.xaml
     /// </summary>
+   
     public partial class Enter_ID : Window
     {
+        public static string playerid;
         public Enter_ID()
         {
             InitializeComponent();
@@ -44,7 +46,8 @@ namespace SFS
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
-            Edit_Player p=new Edit_Player();
+              playerid=id.Text;
+        Edit_Player p=new Edit_Player();
             p.Show();
         }
     }

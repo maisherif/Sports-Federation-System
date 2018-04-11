@@ -33,23 +33,35 @@ namespace SFS
         {
             string gender;
             string med;
-            string bou;
-            string sen;
+            int x= 0;
+            string bou=x.ToString();
+          
+            /* string temp = Date.Text;
+             string id = temp[8].ToString() + temp[9].ToString();*/
             if (male.IsChecked == true)
                 gender = "Male";
             else gender = "Female";
             if (yes.IsChecked == true)
                 med = "Yes";
             else med = "No";
-            if (yes2.IsChecked == true)
-                bou = "Yes";
-            else bou = "No";
+            string temp = Date.Text;
+            string temp2 = Name.Text;
+            string id = temp2[0].ToString() + temp2[1].ToString() + temp[7].ToString() + temp[8].ToString();
 
-            if (Senior.IsChecked == true)
-                sen = "Yes";
-            else sen = "No";
+            if (Name.Text == "" || Number.Text == "" || Salary.Text == "" || team_name.Text == "" || Date.Text == "" )
+            {
+                MessageBox.Show("Please fill the required information !");
+            }
+           else if ((male.IsChecked == true) && (female.IsChecked == true))
+                MessageBox.Show("Please fill the required information !");
+            else if ((yes.IsChecked == true) && (no.IsChecked == true))
+                MessageBox.Show("Please fill the required information !");
 
-            if (!File.Exists("Players.xml"))
+
+           // Player newplayer = new Player(team_name.Text,Name.Text,Date.Text,gender,id,med,);
+
+
+           else if (!File.Exists("Players.xml"))
             {
                 XmlTextWriter document = new XmlTextWriter("Players.xml", Encoding.UTF8);
 
@@ -57,13 +69,14 @@ namespace SFS
                 document.WriteStartDocument();
                 document.WriteStartElement("Players");
                 document.WriteStartElement("Player");
+
                 document.WriteStartElement("Player_Name");
                 document.WriteString(Name.Text);
                 document.WriteEndElement();
 
                 document.WriteStartElement("Player_ID");
-                document.WriteString(Id.Text);
-                document.WriteEndElement();
+                document.WriteString(id);
+                document.WriteEndElement(); 
 
                 document.WriteStartElement("Mobile_Number");
                 document.WriteString(Number.Text);
@@ -93,15 +106,13 @@ namespace SFS
                 document.WriteString(team_name.Text);
                 document.WriteEndElement();
 
-                document.WriteStartElement("Senior");
-                document.WriteString(sen);
-                document.WriteEndElement();
-
                 document.WriteEndElement();
                 document.WriteEndElement();
                 document.WriteEndDocument();
 
                 document.Close();
+
+                MessageBox.Show("Player Successfuly Added.");
             }
            else
 
@@ -115,9 +126,9 @@ namespace SFS
                 Player_Name.InnerText =Name.Text;
                 playerr.AppendChild(Player_Name);
 
-                XmlNode player_id = doc.CreateElement("Player_ID");
-                player_id.InnerText = Id.Text;
-                playerr.AppendChild(player_id);
+                XmlNode ID = doc.CreateElement("Player_ID");
+                ID.InnerText = id;
+                playerr.AppendChild(ID);
 
                 XmlNode MobileNum = doc.CreateElement("Mobile_Number");
                 MobileNum.InnerText = Number.Text;
@@ -147,19 +158,22 @@ namespace SFS
                 teamm.InnerText = team_name.Text;
                 playerr.AppendChild(teamm);
 
-                XmlNode seniorr = doc.CreateElement("Senior");
-                seniorr.InnerText = sen;
-                playerr.AppendChild(seniorr);
-
                 doc.DocumentElement.AppendChild(playerr);
                 doc.Save("Players.xml");
+
+                MessageBox.Show("Player Successfuly Added.");
             }
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
-            Chooose cccc = new Chooose();
+            Add_Options cccc = new Add_Options();
             cccc.Show();
+        }
+
+        private void yes_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
     }

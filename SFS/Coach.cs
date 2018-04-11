@@ -15,10 +15,10 @@ namespace SFS
             team = "";
             champlist = new List<Championships>();
         }
-        public Coach(string team, int n, int x, bool y, string z, string a, int d, string g, int i, bool m, float s, float b) : base(n, x, y, z, a, d, g, i, m, s, b)
+      /*  public Coach(string team, int n, int x, bool y, string z, string a, int d, string g, int i, bool m, float s, float b,string mob) : base(n, x, y, z, a, d, g, i, m, s, b)
         {
             this.team = team;
-        }
+        }*/
         public void setTeam(string team)
         {
             this.team = team;

@@ -29,9 +29,24 @@ namespace SFS
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+       
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (!File.Exists("Clubs.xml"))
+            Add_Options cccc = new Add_Options();
+            cccc.Show();
+        }
+
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            int x = 0;
+            string st =x.ToString();
+            if (Name.Text == "" || starting.Text=="")
+            {
+                MessageBox.Show("Please fill the required information !");
+            }
+
+           else  if (!File.Exists("Clubs.xml"))
             {
                 XmlTextWriter document = new XmlTextWriter("Clubs.xml", Encoding.UTF8);
 
@@ -45,19 +60,19 @@ namespace SFS
                 document.WriteEndElement();
 
                 document.WriteStartElement("Starting_Date");
-                document.WriteString(Starting_.Text);
+                document.WriteString(starting.Text);
                 document.WriteEndElement();
 
                 document.WriteStartElement("Club_Teams");
-                document.WriteString(Team.Text);
+                document.WriteString(st);
                 document.WriteEndElement();
 
                 document.WriteStartElement("Club_Championships");
-                document.WriteString(Champion.Text);
+                document.WriteString(st);
                 document.WriteEndElement();
 
                 document.WriteStartElement("Club_Sponsors");
-                document.WriteString(sponsors.Text);
+                document.WriteString(st);
                 document.WriteEndElement();
 
                 document.WriteEndElement();
@@ -65,6 +80,8 @@ namespace SFS
                 document.WriteEndDocument();
 
                 document.Close();
+
+                MessageBox.Show("Club Successfuly Added.");
             }
             else
 
@@ -78,31 +95,28 @@ namespace SFS
                 club_Name.InnerText = Name.Text;
                 clubss.AppendChild(club_Name);
 
-                XmlNode starting = doc.CreateElement("starting_Date");
-                starting.InnerText = Starting_.Text;
-                clubss.AppendChild(starting);
+                XmlNode Starting = doc.CreateElement("starting_Date");
+                Starting.InnerText = starting.Text;
+                clubss.AppendChild(Starting);
 
                 XmlNode Clubteams = doc.CreateElement("Club_Teams");
-                Clubteams.InnerText = Team.Text;
+                Clubteams.InnerText = st;
                 clubss.AppendChild(Clubteams);
 
                 XmlNode champion = doc.CreateElement("Club_Championships");
-                champion.InnerText = Champion.Text;
+                champion.InnerText = st;
                 clubss.AppendChild(champion);
 
                 XmlNode sponsor = doc.CreateElement("Club_Sponsors");
-                sponsor.InnerText = sponsors.Text;
+                sponsor.InnerText = st;
                 clubss.AppendChild(sponsor);
 
                 doc.DocumentElement.AppendChild(clubss);
                 doc.Save("Clubs.xml");
-            }
-        }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            Chooose cccc = new Chooose();
-            cccc.Show();
+                MessageBox.Show("Club Successfuly Added.");
+            }
+           
         }
     }
 }

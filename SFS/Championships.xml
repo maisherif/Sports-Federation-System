@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Championships>
+  <Championship>
+    <Type_of_Championship>Local</Type_of_Championship>
+    <Place_of_Championship>Cairo</Place_of_Championship>
+    <Senior>Yes</Senior>
+    <Results>0</Results>
+  </Championship>
+  <Championships>
+    <Type_of_Championship>Official</Type_of_Championship>
+    <Place_of_Championship>Al Ahly Club</Place_of_Championship>
+    <Senior>Yes</Senior>
+    <Results>
+    </Results>
+  </Championships>
+</Championships>

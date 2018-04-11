@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 \\vmware-host\Shared Folders\GitHub\Sports-Federation-System\SFS\App.xaml
-15-335384721
+2154739514
 
-31-16543294
+381430182748
 13-1643599102
-Add_Championship.xaml;Add_Club.xaml;Add_Employee.xaml;Add_Player.xaml;Add_Team.xaml;Chooose.xaml;Edit_Delete.xaml;Edit_Employee.xaml;Edit_Medicalform.xaml;Edit_Medicalform_Employee.xaml;Edit_Mobile_Player.xaml;Edit_Player.xaml;Enter_ID.xaml;Enter_ID_Employee.xaml;MainWindow.xaml;
+Add_Championship.xaml;Add_Club.xaml;Add_Employee.xaml;Add_Options.xaml;Add_Player.xaml;Add__Team.xaml;Edit_Avaliable.xaml;Edit_Delete.xaml;Edit_DepartmentSalaryBonus.xaml;Edit_Employee.xaml;Edit_EmployeeMedicalForm.xaml;Edit_MobileNumberEmployee.xaml;Edit_Player.xaml;Edit_PlayerMediacalForm.xaml;Edit_PlayerMobileNumber.xaml;Edit_SalaryBonus.xaml;Edit_TeamName.xaml;Enter_ID.xaml;Enter_ID_Employee.xaml;MainWindow.xaml;Options.xaml;
 
 False
 

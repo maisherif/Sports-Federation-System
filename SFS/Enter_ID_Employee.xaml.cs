@@ -19,6 +19,7 @@ namespace SFS
     /// </summary>
     public partial class Enter_ID_Employee : Window
     {
+        public static string employeeeid;
         public Enter_ID_Employee()
         {
             InitializeComponent();
@@ -44,8 +45,14 @@ namespace SFS
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
+            employeeeid = id.Text;
             Edit_Employee eee = new SFS.Edit_Employee();
             eee.Show();
+        }
+
+        private void id_Copy_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

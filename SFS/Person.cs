@@ -15,6 +15,7 @@ namespace SFS
         bool medicalReport;
         float salary;
         float bonus;
+        string mobile;
         public Person()
         {
             name = "";
@@ -25,7 +26,7 @@ namespace SFS
             salary = 0;
             bonus = 0;
         }
-        public Person(string n, int d, string g, int i, bool m, float s, float b)
+        public Person(string n, int d, string g, int i, bool m, float s, float b,string mob)
         {
             name = n;
             dateOfBirth = d;
@@ -34,6 +35,7 @@ namespace SFS
             medicalReport = m;
             salary = s;
             bonus = b;
+            mobile = mob;
 
         }
         public void setName(string name)
@@ -104,6 +106,16 @@ namespace SFS
         {
 
             return 2018 - getDateOfBirth();
+        }
+
+        public void setmobile(string mobile)
+        {
+            this.mobile = mobile;
+        }
+        public string getmobile()
+        {
+            return this.mobile;
+
         }
         public virtual void displayInfo()
         {
