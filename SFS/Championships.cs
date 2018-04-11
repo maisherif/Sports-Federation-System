@@ -8,48 +8,50 @@ namespace SFS
 {
     class Championships
     {
+        string Name;
         string place;
-        List<Team> teamList;
         string type;
         bool senior;
-       // List<Results> teamResults;
+        List<Team> teamList;
+        int results;
         public Championships()
         {
+            Name = "";
             place = "";
             teamList = new List<Team>();
-           // teamResults = new List<Results>();
+            results = 0;
            
         }
-        public Championships(string placee,string t,bool s)
+        public Championships(string placee,string Type,bool sn)
         {
             place = placee;
-            type = t;
-            senior = s;
-
+            type = Type;
+            senior = sn;
+            
         }
         public void setPlace(string place)
         {
             this.place = place;
         }
+        public void setName(string n)
+        {
+            this.Name = n;
+        }
+        public string getName()
+        {
+            return this.Name;
+        }
         public string GetPlace()
         {
             return this.place;
         }
-        public void setsenior(bool sen)
+        public void setresults(int results)
         {
-            this.senior = sen;
+            this.results = results;
         }
-        public  bool getsenior()
+        public int Getresults()
         {
-            return this.senior;
-        }
-        public void gettype(string t)
-        {
-            this.type = t;
-        }
-        public string gettype()
-        {
-            return this.type;
+            return this.results;
         }
 
     }

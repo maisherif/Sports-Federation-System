@@ -22,7 +22,7 @@ namespace SFS
             department = "";
             
         }
-        public Employee(string x,bool y,string z, string a, int d, string g, int i, bool m, float s, float b, string mob) :base(a,d,g,i,m,s,b,mob)
+        public Employee(string x,bool y,string z, string a, string d, string g, string i, bool m, float s, float b) :base(a,d,g,i,m,s,b)
         {
             
             Employment_date = x;
@@ -66,15 +66,13 @@ namespace SFS
         {
             return this.department;
         }
-        public int Working_year_calc( int  working_year)
+        public int Working_year_calc()
         {
             int current_year = 2018;
             int years;
             years= current_year - working_year;
             return years;
-
         }
-  
-      
+ 
     }
 }

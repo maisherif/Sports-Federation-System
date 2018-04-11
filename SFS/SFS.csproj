@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Accounting.cs" />
     <Compile Include="Add_Championship.xaml.cs">
       <DependentUpon>Add_Championship.xaml</DependentUpon>
     </Compile>
@@ -73,10 +74,40 @@
     <Compile Include="Add__Team.xaml.cs">
       <DependentUpon>Add__Team.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AGE.xaml.cs">
+      <DependentUpon>AGE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bsponsor.xaml.cs">
+      <DependentUpon>Bsponsor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Championships.cs" />
+    <Compile Include="ChampionshipTeamsDatagrid.xaml.cs">
+      <DependentUpon>ChampionshipTeamsDatagrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Club.cs" />
     <Compile Include="Coach.cs" />
+    <Compile Include="coachgrid.xaml.cs">
+      <DependentUpon>coachgrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Containers.cs" />
+    <Compile Include="Display_Championshsips.xaml.cs">
+      <DependentUpon>Display_Championshsips.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Club.xaml.cs">
+      <DependentUpon>Display_Club.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Coaches.xaml.cs">
+      <DependentUpon>Display_Coaches.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Employee.xaml.cs">
+      <DependentUpon>Display_Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Sponsers.xaml.cs">
+      <DependentUpon>Display_Sponsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dsiplay_Accounting.xaml.cs">
+      <DependentUpon>Dsiplay_Accounting.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Edit_Avaliable.xaml.cs">
       <DependentUpon>Edit_Avaliable.xaml</DependentUpon>
     </Compile>
@@ -110,93 +141,214 @@
     <Compile Include="Edit_TeamName.xaml.cs">
       <DependentUpon>Edit_TeamName.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeEmploymentDateDG.xaml.cs">
+      <DependentUpon>EmployeeEmploymentDateDG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesDepartmentDataG.xaml.cs">
+      <DependentUpon>EmployeesDepartmentDataG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesDepartmentQuery.xaml.cs">
+      <DependentUpon>EmployeesDepartmentQuery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmploymentdurationQuery.xaml.cs">
+      <DependentUpon>EmploymentdurationQuery.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Enter_ID.xaml.cs">
       <DependentUpon>Enter_ID.xaml</DependentUpon>
     </Compile>
     <Compile Include="Enter_ID_Employee.xaml.cs">
       <DependentUpon>Enter_ID_Employee.xaml</DependentUpon>
     </Compile>
+    <Compile Include="mainqueryform.xaml.cs">
+      <DependentUpon>mainqueryform.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Managers.cs" />
     <Compile Include="Options.xaml.cs">
       <DependentUpon>Options.xaml</DependentUpon>
     </Compile>
+    <Compile Include="placech.xaml.cs">
+      <DependentUpon>placech.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs" />
+    <Compile Include="playersfiltration.xaml.cs">
+      <DependentUpon>playersfiltration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayersInEachTeamDG.xaml.cs">
+      <DependentUpon>PlayersInEachTeamDG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayersInEachTeamQuery.xaml.cs">
+      <DependentUpon>PlayersInEachTeamQuery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QueryChampionShips%28RESULTS%29.xaml.cs">
+      <DependentUpon>QueryChampionShips%28RESULTS%29.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryQuery.xaml.cs">
+      <DependentUpon>SalaryQuery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryQueryDataGrid.xaml.cs">
+      <DependentUpon>SalaryQueryDataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Accounting.xaml.cs">
+      <DependentUpon>Search_Accounting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Championship.xaml.cs">
+      <DependentUpon>Search_Championship.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search_club.xaml.cs">
+      <DependentUpon>Search_club.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search_coach.xaml.cs">
+      <DependentUpon>Search_coach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Employee.xaml.cs">
+      <DependentUpon>Search_Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Sponser.xaml.cs">
+      <DependentUpon>Search_Sponser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sponsers.cs" />
     <Compile Include="Team.cs" />
+    <Compile Include="TeamChampionShipsQuery.xaml.cs">
+      <DependentUpon>TeamChampionShipsQuery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="typech.xaml.cs">
+      <DependentUpon>typech.xaml</DependentUpon>
+    </Compile>
     <Page Include="Add_Championship.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Add_Club.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Add_Employee.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Add_Options.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Add_Player.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Add__Team.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AGE.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Bsponsor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChampionshipTeamsDatagrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="coachgrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Display_Championshsips.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Display_Club.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Display_Coaches.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Display_Employee.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Display_Sponsers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dsiplay_Accounting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_Avaliable.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_Delete.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_DepartmentSalaryBonus.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_Employee.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_EmployeeMedicalForm.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_MobileNumberEmployee.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_Player.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_PlayerMediacalForm.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_PlayerMobileNumber.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_SalaryBonus.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Edit_TeamName.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EmployeeEmploymentDateDG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EmployeesDepartmentDataG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EmployeesDepartmentQuery.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EmploymentdurationQuery.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Enter_ID.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Enter_ID_Employee.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="mainqueryform.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -212,6 +364,66 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Options.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="placech.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="playersfiltration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayersInEachTeamDG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PlayersInEachTeamQuery.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QueryChampionShips%28RESULTS%29.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SalaryQuery.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SalaryQueryDataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Search_Accounting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Search_Championship.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Search_club.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Search_coach.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Search_Employee.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Search_Sponser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TeamChampionShipsQuery.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="typech.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -245,34 +457,40 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="backgrd.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="back.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="back1.png" />
+    <Resource Include="questionM.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="next.png" />
+    <Resource Include="Championships.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="back2.png" />
+    <Resource Include="Employees.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="deletee.png" />
+    <Resource Include="Players.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="next1.png" />
+    <Resource Include="Clubs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Teams.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sfs.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Add.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="backgrd.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Edit2.png" />
+    <Resource Include="search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

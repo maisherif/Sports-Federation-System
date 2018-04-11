@@ -24,6 +24,11 @@ namespace SFS
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Add_Options ao = new Add_Options();
